@@ -1,11 +1,13 @@
-import { OpenApiDiscriminator } from './OpenApiDiscriminator';
-import { OpenApiExternalDocs } from './OpenApiExternalDocs';
-import { OpenApiReference } from './OpenApiReference';
-import { OpenApiXml } from './OpenApiXml';
+import { OpenApiDiscriminator } from "./OpenApiDiscriminator";
+import { OpenApiExternalDocs } from "./OpenApiExternalDocs";
+import { OpenApiMap } from "./OpenApiMap";
+import { OpenApiReference } from "./OpenApiReference";
+import { OpenApiXml } from "./OpenApiXml";
 
 /**
  * The Schema Object allows the definition of input and output data types. These types can be objects, but also primitives and arrays. This object is an extended subset of the JSON Schema Specification Wright Draft 00.
  * For more information about the properties, see JSON Schema Core and JSON Schema Validation. Unless stated otherwise, the property definitions follow the JSON Schema.
+ *
  * https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#schemaObject
  */
 export interface OpenApiSchema {
@@ -38,7 +40,7 @@ export interface OpenApiSchema {
     /** Value MUST be an object and not an array. Inline or referenced schema MUST be of a Schema Object and not a standard JSON Schema. items MUST be present if the type is array. */
     items?: OpenApiSchema | OpenApiReference;
     /** Property definitions MUST be a Schema Object and not a standard JSON Schema (inline or referenced). */
-    properties?: Map<string, OpenApiSchema | OpenApiReference>;
+    properties?: OpenApiMap<OpenApiSchema | OpenApiReference>;
     /** Value can be boolean or object. Inline or referenced schema MUST be of a Schema Object and not a standard JSON Schema. Consistent with JSON Schema, additionalProperties defaults to true. */
     additionalProperties?: boolean | OpenApiSchema | OpenApiReference;
     /**  CommonMark syntax MAY be used for rich text representation. */

@@ -1,5 +1,6 @@
 /**
  * License information for the exposed API.
+ *
  * https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#licenseObject
  */
 export interface OpenApiLicense {

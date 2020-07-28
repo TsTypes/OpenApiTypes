@@ -1,7 +1,9 @@
-import { OpenApiServerVariable } from './OpenApiServerVariable';
+import { OpenApiMap } from "./OpenApiMap";
+import { OpenApiServerVariable } from "./OpenApiServerVariable";
 
 /**
  * An object representing a Server.
+ *
  * https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#serverObject
  */
 export interface OpenApiServer {
@@ -10,5 +12,5 @@ export interface OpenApiServer {
     /** An optional string describing the host designated by the URL. CommonMark syntax MAY be used for rich text representation. */
     description?: string;
     /** A map between a variable name and its value. The value is used for substitution in the server's URL template. */
-    variables?: Map<string, OpenApiServerVariable>;
+    variables?: OpenApiMap<OpenApiServerVariable>;
 }

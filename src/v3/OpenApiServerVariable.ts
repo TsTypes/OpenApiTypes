@@ -1,5 +1,6 @@
 /**
  * An object representing a Server Variable for server URL template substitution.
+ *
  * https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#serverVariableObject
  */
 export interface OpenApiServerVariable {

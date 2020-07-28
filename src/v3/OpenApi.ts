@@ -8,6 +8,7 @@ import { OpenApiTag } from "./OpenApiTag";
 
 /*
  * This is the root document object of the OpenAPI document.
+ *
  * https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#oasObject
  */
 export interface OpenApi {

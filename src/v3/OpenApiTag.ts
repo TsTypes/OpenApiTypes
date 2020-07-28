@@ -1,7 +1,8 @@
-import { OpenApiExternalDocs } from './OpenApiExternalDocs';
+import { OpenApiExternalDocs } from "./OpenApiExternalDocs";
 
 /**
  * Adds metadata to a single tag that is used by the Operation Object. It is not mandatory to have a Tag Object per tag defined in the Operation Object instances.
+ *
  * https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#tagObject
  */
 export interface OpenApiTag {

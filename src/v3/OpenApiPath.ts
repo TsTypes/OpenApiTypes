@@ -1,10 +1,11 @@
-import { OpenApiOperation } from './OpenApiOperation';
-import { OpenApiParameter } from './OpenApiParameter';
-import { OpenApiReference } from './OpenApiReference';
-import { OpenApiServer } from './OpenApiServer';
+import { OpenApiOperation } from "./OpenApiOperation";
+import { OpenApiParameter } from "./OpenApiParameter";
+import { OpenApiReference } from "./OpenApiReference";
+import { OpenApiServer } from "./OpenApiServer";
 
 /**
  * Describes the operations available on a single path. A Path Item MAY be empty, due to ACL constraints. The path itself is still exposed to the documentation viewer but they will not know which operations and parameters are available.
+ *
  * https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#pathItemObject
  */
 export interface OpenApiPath {

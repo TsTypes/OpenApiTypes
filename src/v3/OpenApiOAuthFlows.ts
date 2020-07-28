@@ -1,7 +1,8 @@
-import { OpenApiOAuthFlow } from './OpenApiOAuthFlow';
+import { OpenApiOAuthFlow } from "./OpenApiOAuthFlow";
 
 /**
  * Allows configuration of the supported OAuth Flows.
+ *
  * https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#oauthFlowsObject
  */
 export interface OpenApiOAuthFlows {
