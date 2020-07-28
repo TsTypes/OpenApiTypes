@@ -10,7 +10,8 @@ import { OpenApiServer } from "./OpenApiServer";
  * https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#pathItemObject
  */
 export interface OpenApiPath {
-    /** Allows for an external definition of this path item. The referenced structure MUST be in the format of a Path Item Object.
+    /**
+     * Allows for an external definition of this path item. The referenced structure MUST be in the format of a Path Item Object.
      * If there are conflicts between the referenced definition and this Path Item's definition, the behavior is undefined.
      */
     $ref?: string;
@@ -36,7 +37,8 @@ export interface OpenApiPath {
     trace?: OpenApiOperation;
     /** An alternative server array to service all operations in this path. */
     servers?: OpenApiServer[];
-    /** A list of parameters that are applicable for all the operations described under this path.
+    /**
+     * A list of parameters that are applicable for all the operations described under this path.
      * These parameters can be overridden at the operation level, but cannot be removed there.
      * The list MUST NOT include duplicated parameters. A unique parameter is defined by a combination of a name and location.
      * The list can use the Reference Object to link to parameters that are defined at the OpenAPI Object's components/parameters.

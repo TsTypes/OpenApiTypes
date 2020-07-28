@@ -7,7 +7,8 @@ import { OpenApiServerVariable } from "./OpenApiServerVariable";
  * https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md#serverObject
  */
 export interface OpenApiServer {
-    /** A URL to the target host. This URL supports Server Variables and MAY be relative, to indicate that the host location is relative to the location where the OpenAPI document is being served.
+    /**
+     * A URL to the target host. This URL supports Server Variables and MAY be relative, to indicate that the host location is relative to the location where the OpenAPI document is being served.
      * Variable substitutions will be made when a variable is named in {brackets}.
      */
     url: string;

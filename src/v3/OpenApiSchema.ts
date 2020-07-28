@@ -59,24 +59,28 @@ export interface OpenApiSchema {
         | "date"
         | "date-time"
         | "password";
-    /** The default value represents what would be assumed by the consumer of the input as the value of the schema if one is not provided.
+    /**
+     * The default value represents what would be assumed by the consumer of the input as the value of the schema if one is not provided.
      * Unlike JSON Schema, the value MUST conform to the defined type for the Schema Object defined at the same level.
      * For example, if type is string, then default can be "foo" but cannot be 1.
      */
     default?: any;
     /** Allows sending a null value for the defined schema. Default value is false. */
     nullable?: boolean;
-    /** Adds support for polymorphism. The discriminator is an object name that is used to differentiate between other schemas which may satisfy the payload description.
+    /**
+     * Adds support for polymorphism. The discriminator is an object name that is used to differentiate between other schemas which may satisfy the payload description.
      * See Composition and Inheritance for more details.
      */
     discriminator?: OpenApiDiscriminator;
-    /** Relevant only for Schema "properties" definitions. Declares the property as "read only".
+    /**
+     * Relevant only for Schema "properties" definitions. Declares the property as "read only".
      * This means that it MAY be sent as part of a response but SHOULD NOT be sent as part of the request.
      * If the property is marked as readOnly being true and is in the required list, the required will take effect on the response only.
      * A property MUST NOT be marked as both readOnly and writeOnly being true. Default value is false.
      */
     readOnly?: boolean;
-    /** Relevant only for Schema "properties" definitions. Declares the property as "write only".
+    /**
+     * Relevant only for Schema "properties" definitions. Declares the property as "write only".
      * Therefore, it MAY be sent as part of a request but SHOULD NOT be sent as part of the response.
      * If the property is marked as writeOnly being true and is in the required list, the required will take effect on the request only.
      * A property MUST NOT be marked as both readOnly and writeOnly being true. Default value is false.
@@ -86,7 +90,8 @@ export interface OpenApiSchema {
     xml?: OpenApiXml;
     /** Additional external documentation for this schema. */
     externalDocs?: OpenApiExternalDocs;
-    /** A free-form property to include an example of an instance for this schema.
+    /**
+     * A free-form property to include an example of an instance for this schema.
      * To represent examples that cannot be naturally represented in JSON or YAML, a string value can be used to contain the example with escaping where necessary.
      */
     example?: any;

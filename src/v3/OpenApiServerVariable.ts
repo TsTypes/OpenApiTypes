@@ -6,7 +6,8 @@
 export interface OpenApiServerVariable {
     /** An enumeration of string values to be used if the substitution options are from a limited set. */
     enum?: string[];
-    /** The default value to use for substitution, which SHALL be sent if an alternate value is not supplied.
+    /**
+     * The default value to use for substitution, which SHALL be sent if an alternate value is not supplied.
      * Note this behavior is different than the Schema Object's treatment of default values, because in those cases parameter values are optional.
      */
     default: string;
