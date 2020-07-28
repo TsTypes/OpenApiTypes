@@ -6,7 +6,7 @@ import { OpenApiMap } from "./OpenApiMap";
 import { OpenApiParameter } from "./OpenApiParameter";
 import { OpenApiReference } from "./OpenApiReference";
 import { OpenApiRequestBody } from "./OpenApiRequestBody";
-import { OpenApiResponses } from "./OpenApiResponses";
+import { OpenApiResponse } from "./OpenApiResponse";
 import { OpenApiSchema } from "./OpenApiSchema";
 import { OpenApiSecurityScheme } from "./OpenApiSecurityScheme";
 
@@ -20,7 +20,7 @@ export interface OpenApiComponents {
     /** An object to hold reusable Schema Objects. */
     schemas?: OpenApiMap<OpenApiSchema | OpenApiReference>;
     /** An object to hold reusable Response Objects. */
-    responses?: OpenApiMap<OpenApiResponses | OpenApiReference>;
+    responses?: OpenApiMap<OpenApiResponse | OpenApiReference>;
     /** An object to hold reusable Parameter Objects. */
     parameters?: OpenApiMap<OpenApiParameter | OpenApiReference>;
     /** An object to hold reusable Example Objects. */

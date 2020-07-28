@@ -5,6 +5,7 @@ export type OpenApiStyle =
     | "matrix"
     | "label"
     | "form"
+    | "simple"
     | "spaceDelimited"
     | "pipeDelimited"
     | "deepObject";

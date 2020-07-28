@@ -47,7 +47,7 @@ export interface OpenApiParameter {
     /** Examples of the media type. Each example SHOULD contain a value in the correct format as specified in the parameter encoding. The examples field is mutually exclusive of the example field. Furthermore, if referencing a schema which contains an example, the examples value SHALL override the example provided by the schema. */
     examples?: OpenApiMap<OpenApiExample | OpenApiReference>;
     /** A map containing the representations for the parameter. The key is the media type and the value describes it. The map MUST only contain one entry. A parameter MUST contain either a schema property, or a content property, but not both. When example or examples are provided in conjunction with the schema object, the example MUST follow the prescribed serialization strategy for the parameter. */
-    content: OpenApiMap<OpenApiMediaType>;
+    content?: OpenApiMap<OpenApiMediaType>;
 }
 
 /**
