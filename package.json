@@ -1,0 +1,29 @@
+{
+    "name": "open-api-types",
+    "version": "1.0.0",
+    "description": "Types for OpenApi",
+    "author": "Iulian Preda",
+    "license": "MIT",
+    "scripts": {
+        "buildv3": "cd ./src/v3 && tsc",
+        "watch": "tsc --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/IulianOctavianPreda/OpenApiTypes.git"
+    },
+    "homepage": "https://github.com/IulianOctavianPreda/OpenApiTypes#readme",
+    "bugs": {
+        "url": "https://github.com/IulianOctavianPreda/OpenApiTypes/issues"
+    },
+    "keywords": [
+        "OpenApi",
+        "typescript",
+        "ts",
+        "types"
+    ],
+    "devDependencies": {
+        "tslint": "^6.1.2",
+        "typescript": "^3.9.7"
+    }
+}

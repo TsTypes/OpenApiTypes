@@ -1,0 +1,9 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outFile": "../../dist/open-api-v3/index.js" /* Concatenate and emit output to single file. */,
+        "rootDir": "./" /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+    },
+    "compileOnSave": true,
+    "include": ["./**/*.ts"]
+}
