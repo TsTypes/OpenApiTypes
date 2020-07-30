@@ -6,6 +6,7 @@
     "license": "MIT",
     "scripts": {
         "buildv3": "cd ./src/v3 && tsc",
+        "buildv2": "cd ./src/v2 && tsc",
         "watch": "tsc --watch"
     },
     "repository": {
